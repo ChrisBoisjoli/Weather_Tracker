@@ -3,3 +3,9 @@ h1 {
     background-color: blue;
     text-align: center;
 }
+.container {
+    border: 1px solid black;
+}
+.jumbotron {
+    border: 1px solid black;
+}
