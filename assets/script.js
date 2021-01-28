@@ -10,15 +10,10 @@ $("button").on("click", function(event){
     console.log(cityInput);
     
 
-
-// var cityId = $(this).val("#city-input");
-
-
-
-    var queryURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityInput +  "&appid=9ac0788da70afdca53d6b9c82e029618";
+    var queryURLCurrent = "https://api.openweathermap.org/data/2.5/weather?q=" + cityInput +  "&appid=9ac0788da70afdca53d6b9c82e029618";
 
     $.ajax({
-        url: queryURL,
+        url: queryURLCurrent,
         method: "GET"
     }).then(function(response){
 
@@ -47,20 +42,16 @@ $("button").on("click", function(event){
         console.log(response);
 
     });
+// 5 day forecast
+    var queryURLFiveDay= "https://api.openweathermap.org/data/2.5/forecast/daily?q=" + cityInput +"&cnt=5&appid=9ac0788da70afdca53d6b9c82e029618";
+    $.ajax({
+        url: queryURLFiveDay,
+        method: "GET"
+    }).then(function(response){
+        
+    }
 });
-// searchWeather("minneapolis");
 
-// button for handling click city name
-// $("#add-city").on("click", function(event){
-//     event.preventDefault();
-    
-//     var cityInput = $("#city-input").val().trim();
-    
-    
-//     console.log(cityInput);
-    
-
-// });
 
 // UV Index API CALL http://api.openweathermap.org/data/2.5/uvi?lat={lat}&lon={lon}&appid={API key}
 
