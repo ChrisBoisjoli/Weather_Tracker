@@ -19,11 +19,14 @@ function searchWeather(city){
         var temperature = $("<td>").text(response.main.temp);
         var humidity = $("<td>").text(response.main.humidity);
         var windspeed = $("<td>").text(response.Actors);
-        var uvIndex = $("<td>").text(response.main.temp);
+        
 // temp 
 // humidity
 // windspeed
-// UV index
+
     };
 };
 
+// UV Index API CALL http://api.openweathermap.org/data/2.5/uvi?lat={lat}&lon={lon}&appid={API key}
+
+// var uvIndex = $("<td>").text(response.main.temp);
