@@ -17,21 +17,20 @@
   <body>
     <h1>Weather Tracker</h1>
     <div class="container">
-        <input class="form-control form-control-lg" type="text" placeholder="Enter City" aria-label=".form-control-lg example">
+        <input  class="form-control form-control-lg" type="text" id="city-input" placeholder="Enter City" aria-label=".form-control-lg example">
           <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">Submit</button>
+            <button id="add-city" type="submit" class="btn btn-primary mb-3">Submit</button>
           </div>
         </form>
       </div>
     </div>
     <div class="container">
       <div class="row">
-        <div class="col-3">Cities</div>
+        <div id="buttons-view"class="col-3">Cities</div>
         <div class="col-9 currentWeather jumbotron">
             <table class="table">
             <thead>
               <tr>
-                
                 <th scope="col">City</th>
                 <th scope="col">Temperature</th>
                 <th scope="col">Humidity</th>
