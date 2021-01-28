@@ -18,7 +18,7 @@ function searchWeather(city){
         var cityName = $("<td>").text(response.name);
         var temperature = $("<td>").text(response.main.temp);
         var humidity = $("<td>").text(response.main.humidity);
-        var windspeed = $("<td>").text(response.Actors);
+        var windspeed = $("<td>").text(response.wind.speed);
 
         tRow.append(cityName);
         tRow.append(temperature);
