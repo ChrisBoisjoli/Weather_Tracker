@@ -26,11 +26,12 @@ function searchWeather(city){
         tRow.append(windspeed);
 
         $("tbody").append(tRow);
-
+        console.log(response);
 
     });
 };
-
+searchWeather("minneapolis");
+console.log(response);
 // UV Index API CALL http://api.openweathermap.org/data/2.5/uvi?lat={lat}&lon={lon}&appid={API key}
 
 // var uvIndex = $("<td>").text(response.main.temp);
