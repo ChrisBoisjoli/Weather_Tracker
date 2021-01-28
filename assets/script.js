@@ -48,6 +48,17 @@ $("button").on("click", function(event){
         url: queryURLFiveDay,
         method: "GET"
     }).then(function(response){
+        var results = response.data;
+
+          for (var i = 0; i < results.length; i++) {
+              var dayDiv = $("<div>");
+
+              var fiveDate = results[i].list.dt;
+            //   icon
+              var fiveTemp = results[i].list.main.temp;
+              var fiveHumid = results[i].list.main.humidity;
+          };
+
 
     })
 });
