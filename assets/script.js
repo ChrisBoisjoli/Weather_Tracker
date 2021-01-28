@@ -43,7 +43,7 @@ $("button").on("click", function(event){
 
     });
 // 5 day forecast
-    var queryURLFiveDay= "https://api.openweathermap.org/data/2.5/forecast?q=" + cityInput + "appid=9ac0788da70afdca53d6b9c82e029618";
+    var queryURLFiveDay= "https://api.openweathermap.org/data/2.5/forecast?q=" + cityInput + "&cnt=5&appid=9ac0788da70afdca53d6b9c82e029618";
     $.ajax({
         url: queryURLFiveDay,
         method: "GET"
