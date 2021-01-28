@@ -19,7 +19,7 @@ function searchWeather(city){
 
         var tempK = response.main.temp;
         var tempFa= (tempK - 273.15) * 1.80 + 32;
-        console.log(tempF);   
+        console.log(tempFa);   
         var tempF = tempFa.toFixed(2);
         var temperature = $("<td>").text(tempF + " &deg, F").html(tempF + "&deg;F");
         
