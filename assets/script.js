@@ -46,28 +46,28 @@ $("button").on("click", function(event){
     
 });
 
-$("button").on("click", function(event){
-// 5 day forecast need to be able to retrieve city input should put in local storage
-var queryURLFiveDay= "https://api.openweathermap.org/data/2.5/forecast?q=" + cityInput + "&cnt=5&appid=9ac0788da70afdca53d6b9c82e029618";
-    $.ajax({
-        url: queryURLFiveDay,
-        method: "GET"
-    }).then(function(response){
-        var results = response.data;
-        console.log(response);
-          for (var i = 0; i < results.length; i++) {
-              var dayDiv = $("<div>");
+// $("button").on("click", function(event){
+// // 5 day forecast need to be able to retrieve city input should put in local storage
+// var queryURLFiveDay= "https://api.openweathermap.org/data/2.5/forecast?q=" + cityInput + "&cnt=5&appid=9ac0788da70afdca53d6b9c82e029618";
+//     $.ajax({
+//         url: queryURLFiveDay,
+//         method: "GET"
+//     }).then(function(response){
+//         var results = response.data;
+//         console.log(response);
+//           for (var i = 0; i < results.length; i++) {
+//               var dayDiv = $("<div>");
 
-              var fiveDate = results[i].list.dt;
-            //   icon
-              var fiveTemp = results[i].list.main.temp;
-              var fiveHumid = results[i].list.main.humidity;
+//               var fiveDate = results[i].list.dt;
+//             //   icon
+//               var fiveTemp = results[i].list.main.temp;
+//               var fiveHumid = results[i].list.main.humidity;
               
-          };
+//           };
 
 
-    });
-});
+//     });
+// })
 // UV Index API CALL http://api.openweathermap.org/data/2.5/uvi?lat={lat}&lon={lon}&appid={API key}
 
 // var uvIndex = $("<td>").text(response.main.temp);
